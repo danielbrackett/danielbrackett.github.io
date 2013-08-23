@@ -64,7 +64,40 @@
 
       <div class="body-content">
 <p>I need to add a way to email me at my address. </p> 
-        <!-- Example row of columns -->
+<?php
+    if (!array_key_exists('Submitted',$_POST))
+        {
+        ?>
+                <form method="post" action="Mail.php">
+                        <input type="hidden" name="Submitted" value="true">
+                                Mail Server: <input type="text" name="Host" size="25"><br>
+                                        To: <input type="text" name="To" size="25"><br>
+                                                From: <input type="text" name="From" size="25"><br>
+                                                        Subject: <input type="text" name="Subject" size="25"><br>
+                                                                <textarea name="Message" cols="50" rows="10"></textarea><br>
+                                                                        <input type="submit" value="Send Email">
+                                                                                </form>
+                                                                                <?php
+                                                                                    }
+                                                                                        else
+                                                                                            {
+                                                                                                    ini_set('SMTP',$_POST['Host']);
+                                                                                                            $to = $_POST['To'];
+                                                                                                                    $from = 'From: ' . $_POST['From'];
+                                                                                                                            $subject = $_POST['Subject'];
+                                                                                                                                    $message = $_POST['Message'];
+                                                                                                                                         
+                                                                                                                                                 if(mail($to,$subject,$message,$from))
+                                                                                                                                                         {
+                                                                                                                                                                     echo "Message Sent";
+                                                                                                                                                                             }
+                                                                                                                                                                                     else
+                                                                                                                                                                                             {
+                                                                                                                                                                                                          echo "Message Not Sent";
+                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                      ?>
+<!-- Example row of columns -->
         <div class="row">
           <div class="col-lg-4">
             <h2>AngelHack 2013</h2>
