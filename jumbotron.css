@@ -40,7 +40,7 @@ body {
     .jumbotron .main-hdr {
       font-size: 35px;    
     }
-    .jumbotron .pull-left {
+    .jumbotron .pull-right {
       .clearfix();
     }
     .body-content {
