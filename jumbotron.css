@@ -31,3 +31,18 @@ body {
     padding: 0;
   }
 }
+
+@media handheld and (max-width 767px) {
+    /* confine the jumbotron to moblie */
+    .jumbotron {
+     margin-top: 5px;
+    }
+    .jumbotron .main-hdr {
+      font-size: 35px;    
+    }
+    .jumbotron .pull-left {
+      .clearfix();
+    }
+    .body-content {
+      padding: 0;
+    }
