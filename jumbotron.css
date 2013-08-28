@@ -32,9 +32,10 @@ body {
   }
 }
 
-@media handheld and (max-width 767px) {
+@media (min-width: @screen-sm) {
     /* confine the jumbotron to moblie */
-    .jumbotron {
+
+    .jumbotron .main-hdr {
      margin-top: 5px;
     }
     .jumbotron .main-hdr {
@@ -45,4 +46,11 @@ body {
     }
     .body-content {
       padding: 0;
-    }
+    } */
+
+@media (min-width: @screen-md) {
+
+
+}
+
+@media (min-width: @screen-

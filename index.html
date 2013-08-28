@@ -28,7 +28,7 @@ saved from url=(0069)file:///home/suplol/Documents/bootstrap-examples/jumbotron/
         <a class="navbar-brand" href="index.html">Daniel Brackett</a>
         <div class="nav-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#about2">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
@@ -114,8 +114,28 @@ saved from url=(0069)file:///home/suplol/Documents/bootstrap-examples/jumbotron/
         <p> I am working to expand my knowledge of Networking, so I'll be adding some code that can do networking stuff. More to follow in early October.</p>
 
    </div>
-   </div>
-   <a name="contact"></a>
+   </div> 
+   <br>
+<a name="contact"></a>
+
+<form action="emailContacts.php" method="post" role="form"> 
+    <div class="form-group">
+        <label for="visitorEmail">Email address *</label>
+        <input type="email" class="form-control" name="visitorEmail" id="visitorEmail" placeholder="Enter Email" required aria-required="true">
+    </div>
+    <div class="form-group">
+        <label for="visitorSubject">Subject *</label>
+        <input type="text" class="form-control" name="visitorSubject" id="visitorSubject"  placeholder="Enter Subject" required aria-required="true" >
+    </div>
+    <div class="form-group">
+        <label for="visitorUrl">Your Url</label>
+        <input type="url" class="form-control" name="visitorUrl" id="visitorUrl" placeholder="URL optional">
+    </div>
+        <label for="visitorMessage">Message *</label>
+        <textarea class="form-control" rows="4" name="visitorMessage" id="visitorMessage" placeholder="Your Message to Dan" required aria-required="true"></textarea>
+<br>
+<input type="submit" class="btn btn-primary"></input>
+
 <form name="contactform" method="post" action="emailContacts.php">
 <table width="450px">
 <tr>
