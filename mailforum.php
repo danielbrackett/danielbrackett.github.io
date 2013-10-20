@@ -2,7 +2,7 @@
 <body> 
 
 <?php
-
+/*
 function spamcheck($field) {
     //filter_var() sanitizes the e-mail
     //address using FILTER_SANITIZE_EMAIL
@@ -17,16 +17,21 @@ function spamcheck($field) {
              return FALSE;
         }
     }
-    
-    if(isset($_POST["email"])){
+  */  
+    //if(isset($_POST["email"])){
     //if form is filled, then send email
+    $emailto = "dan@danielbrackett.com";
     $email = $_POST["visitorEmail"];
     $subject = $_POST["visitorSubject"];
     $message = $_POST["visitorMessage"];
+    $message .= "URL: ".$url."\n";
+    $message .= "Email: ".$visitorEmail."\n";
     $url = $_POST["visitorUrl"];
-    mail("dan@danielbrackett.com", $subject, $message, "From: " . $email, "URL: ". $url);
+    $headers = 'From: ' .$visitorEmail."\r\n";
+    @mail($emailto, $subject, $message, $headers);
     echo "Thanks for emailing me.";
-    }
+   /*
+   }
 
     else {
     //if email is not filled out, display form
@@ -38,7 +43,9 @@ function spamcheck($field) {
     <input type="submit">
     </form>"; 
     }
-
+*/
 ?>
+<h3>Link back to my<a href="index.html"> Homepage</a>.</h3>
+
 </body>
 </html>

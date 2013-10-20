@@ -49,26 +49,24 @@ saved from url=(0069)file:///home/suplol/Documents/bootstrap-examples/jumbotron/
     </div>
 
     <div class="container">
- <a name="about"></a>
-      <!-- Main jumbotron for a primary marketing message or call to action -->
+    <a name="about"></a>     <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
        <div class="media">
-        <img class="pull-right" src="../assets/img/me00.jpg" alt="Dan's photo">
-        <div class="media-body">
+        <img class="pull-right" src="../assets/img/danielbrackett.JPG" alt="Daniel Brackett's photo">
+         <div class="media-body">
           <h1 class="media-heading main-hdr">Daniel Brackett | Software Developer</h1>
-        <p>Hi, I am a jujitsuka, runner and Software Developer in the Seattle area. I enjoy thinking up solutions to problems. </p>
-        <p> I would have to say that I really get jazzed about back-end work. In school I most enjoyed learning about language theory and compiler design. Although the theoritical aspects of Algorithms and the challenge of Networking really excited me and opened my eyes to many new ideas and possibilities. </p>
-        <p>I mostly code in Java and Haskell. I started a personal project where I am using Python, Django and MySQL so I do like challenging myself to learn and grow. </p> 
+           <p>Hi, I am a jujitsuka, runner and Software Developer in the Seattle area. I enjoy thinking up solutions to problems. </p>
+           <p> I would have to say that I really get jazzed about back-end work. In school I most enjoyed learning about language theory and compiler design. Although the theoritical aspects of Algorithms and the challenge of Networking really excited me and opened my eyes to many new ideas and possibilities. </p>
+           <p>I mostly code in Java and Haskell. I started a personal project where I am using Python, Django and MySQL so I do like challenging myself to learn and grow. </p> 
         
+         </div>
         </div>
-       </div>
 <!--        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p> -->
+       </div>
       </div>
 
-      <div class="body-content">
-
-    <div class="container">
-
+    <div class="body-content">
+     <div class="container">
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
        <div class="media"> <a name="projects"></a>
@@ -80,20 +78,20 @@ saved from url=(0069)file:///home/suplol/Documents/bootstrap-examples/jumbotron/
        </div>
 <!--        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p> -->
       </div>
-
-      <div class="body-content">
-        <hr>
-
-     <div class="media" >
+     </div>
+    </div>
+      <div class="body-content">   <hr>
+       <div class="media" >
        <a class="pull-left" href="#">
             <img class="media-object" src="../assets/img/recursiveDS1.png" alt="project photo">
        </a> 
-   <div class="media-body" >
+        <div class="media-body" >
         <h3 class="media-heading">Project; Compiler for C-lite</h3>
         <p> While studying compiler and programming language design, I built a recursive descent parser for a sub-class of the C language, affectionately called Clite (pronounced as 'Kite' with an 'l' inserted). Here is a link to the code on <a href="https://github.com/danielbrackett/Clite">Github</a>.</p>
 
-   </div>
-   </div>
+        </div>
+       </div>
+      </div> 
     <div class="media" >
        <a class="pull-left" href="#">
             <img class="media-object" src="/assets/img/treeAA.gif" alt="project photo">
@@ -118,7 +116,7 @@ saved from url=(0069)file:///home/suplol/Documents/bootstrap-examples/jumbotron/
    <br>
 <a name="contact"></a>
 
-<form action="emailContacts.php" method="post" role="form"> 
+<form action="mailforum.php" method="post" role="form"> 
     <div class="form-group">
         <label for="visitorEmail">Email address *</label>
         <input type="email" class="form-control" name="visitorEmail" id="visitorEmail" placeholder="Enter Email" required aria-required="true">
@@ -134,7 +132,8 @@ saved from url=(0069)file:///home/suplol/Documents/bootstrap-examples/jumbotron/
         <label for="visitorMessage">Message *</label>
         <textarea class="form-control" rows="4" name="visitorMessage" id="visitorMessage" placeholder="Your Message to Dan" required aria-required="true"></textarea>
 <br>
-<input type="submit" class="btn btn-primary"></input>
+<input type="submit" value= "Submit" class="btn btn-primary">
+</form>
 <!--
 <form name="contactform" method="post" action="emailContacts.php">
 <table width="450px">
@@ -190,12 +189,21 @@ saved from url=(0069)file:///home/suplol/Documents/bootstrap-examples/jumbotron/
         <footer>
           <p>© Daniel Brackett 2013</p>
         </footer>
-      </div>
+      
 
-    </div> <!-- /container -->
+<!--    </div>  /container -->
 
     <script src="./index_files/jquery.js"></script>
     <script src="./index_files/bootstrap.min.js"></script>
   
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+          ga('create', 'UA-44144623-1', 'danielbrackett.com');
+            ga('send', 'pageview');
+
+            </script>
 </body></html>
